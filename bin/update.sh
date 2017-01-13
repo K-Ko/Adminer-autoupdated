@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+## set -x
 
 ### Version, latest stable version: http://www.adminer.org/latest[-mysql][-de].php
 ### Here MySQL multi-language
