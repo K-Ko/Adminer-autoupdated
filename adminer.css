@@ -1,0 +1,257 @@
+* {
+  color:#333333;
+  margin:0px;
+  padding:0px;
+}
+
+body {
+  font: 13px/1.5 Verdana, 'Geneva CE', lucida, sans-serif;
+}
+
+a,a:visited {
+  color:maroon;
+  text-decoration:none;
+  padding:3px 1px;
+}
+
+#content table thead span, #content table thead a {
+  font-weight:bold;
+  color:black;
+}
+
+#content table thead a:hover {
+  text-decoration:underline;
+  color:black;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+h1 {
+  font-size:1.9em;
+  font-weight:normal;
+  background:white;
+  color:#1e5eb6;
+  border-bottom:1px solid #f4f4f4;
+  padding:5px;
+  margin:0px;
+}
+
+#menu h1 {
+  padding:0px 0px 5px 10px;
+  background:none;
+}
+
+h2,h3 {
+  font-size:1.5em;
+  font-weight:normal;
+  background:white;
+  color:#1e5eb6;
+  border-bottom:1px solid #f4f4f4;
+
+  padding:3px 0px;
+  margin:0px;
+}
+
+fieldset {
+  padding:5px;
+  border:1px solid #f4f4f4;
+}
+
+input,select,textarea {
+  border:1px solid #e5e5e5;
+  margin:1px;
+  padding:3px;
+}
+
+input[type=submit] {
+  color:white;
+  background:#777;
+  padding:3px 10px;
+  cursor:pointer;
+  border:0px solid;
+}
+
+input[type=submit]:hover{
+}
+
+input[type=checkbox]{
+  margin-right:5px;
+}
+
+input[type=image] {
+  border:1px solid #d0cdc4;
+}
+
+input[type=checkbox],input[type=radio]{
+  border:1px solid #e5e5e5;
+  padding:2px 5px;
+}
+
+code{
+  background:#f0ffe1;
+  border:1px dashed #d5f1b9;
+  padding:2px 4px;
+  font-family:"Courier New";
+}
+code a:hover{background:transparent}
+
+table{
+  margin:10px 0px;
+  border:1px solid #d0cdc4;
+  border-collapse:collapse;
+}
+
+tbody tr:hover td,tbody tr:hover th{
+}
+
+thead th, thead td {
+  text-align:center;
+  vertical-align:middle;
+  font-weight:bold;
+  white-space:nowrap;
+  background:#eee;
+  color:#808080;
+}
+
+th,td{
+  border:1px solid #d0cdc4;
+  padding:3px 6px;
+  vertical-align:top;
+}
+
+th a {
+  padding-bottom:0px;
+}
+
+th {
+  background:white;
+}
+
+tr.odd td {
+  background:#fcfaf5;
+}
+
+#content tbody tr.checked td, tr.checked.odd td {
+  background:#fbe2e2;
+  color:red;
+}
+
+.hidden{
+  display:none
+}
+
+.error,.message{
+  padding:0px;
+  background:transparent;
+  font-weight:bold
+}
+
+.error{
+  color:#c00
+}
+
+.message{
+  color:#090
+}
+
+#content{
+  margin:0px 0px 0px 320px;
+  padding:50px 20px 40px 0px;
+  height:100%;
+}
+
+#lang {
+  background:#eee;
+  color:#808080;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  padding-left: 20px;
+  z-index:1;
+}
+
+#breadcrumb {
+  position:fixed;
+  top:0px;
+  left:300px;
+  background:#eee;
+  z-index:2;
+  width:100%;
+  padding-top:5px;
+}
+
+#menu {
+  background:#fcfaf5;
+  position:fixed;
+  top:-10px;
+  padding:10px;
+  padding-top:30px;
+  bottom:0px;
+  overflow:auto;
+  left:0px;
+  width:240px;
+  border-right:5px solid #eee;
+}
+
+#schema .table {
+  padding:5px;
+  background:#fcfaf5;
+  border:1px solid #d0cdc4;
+}
+
+#schema .table b {
+  color:#006aeb;
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+#schema .table b:hover {
+  color:white;
+}
+
+input[name=logout] {
+  color:#fce2e2;
+  background:#d73e3e;
+}
+
+input[name=logout]:hover {
+}
+
+#logins a, #tables a { 
+  background:none;
+}
+
+#logins a:hover, #tables a:hover { 
+}
+
+#logout {
+  color:#006aeb;
+  text-decoration:none;
+}
+
+#logout:hover {
+  color:white;
+}
+
+.js .column {
+  background:#eee;
+}
+
+#content table thead a.text:hover {
+  text-decoration:none;
+}
+
+#version, .version {
+  font-size:50%;
+}
+
+#h1:hover {
+  color:white;
+}
+
+pre.sqlarea.jush-sql.jush {
+    height: 600px !important;
+}

@@ -1,0 +1,18 @@
+###
+### MySQL socket
+###
+mysql=localhost:/var/run/mysqld/mysqld.sock
+
+###
+### Adminer Version
+### latest stable version: http://www.adminer.org/latest[-mysql][-de].php
+###
+
+### All, multi-language
+# version=latest.php
+
+### MySQL only, multi-language
+version=latest-mysql.php
+
+### MySQL only, german
+# version=latest-mysql-de.php
