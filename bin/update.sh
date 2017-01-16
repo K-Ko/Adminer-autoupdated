@@ -2,17 +2,15 @@
 
 ## set -x
 
-### Version, latest stable version: http://www.adminer.org/latest[-mysql][-de].php
-### Here MySQL multi-language
-version=latest-mysql.php
+## Find base path also if script was linked
+path=$(dirname $(dirname $(readlink -f $0)))
 
-#################################################
-### Let's go
-###
-path=$(dirname $0)/..
+cfg=$path/config/config.ini
+
+[ ! -s $cfg ] && echo 'Missing configuration file!' && exit 1
 
 ### Get config
-. $path/config/config.ini
+. $cfg
 
 ### Temp file for download
 new=$(mktemp)
