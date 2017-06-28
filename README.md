@@ -25,6 +25,8 @@ Adminer installation with auto-update script
 
 ## Design
 
-In this repo is a cleaner `adminer.css` included.
+In this repo is a cleaner `adminer.css` included which is used as default.
 
-You can replace it with any other design from [Adminer homepage](https://www.adminer.org/#extras)
+The [Theme for Adminer](https://github.com/pematon/adminer-theme) is also included but disabled by default. Activate it via `config/config.ini`
+
+Or you can replace the default `adminer.css` also with any other design from [Adminer homepage](https://www.adminer.org/#extras)

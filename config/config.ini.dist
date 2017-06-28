@@ -1,7 +1,7 @@
 ###
 ### MySQL socket
 ###
-mysql=localhost:/var/run/mysqld/mysqld.sock
+mysql = localhost:/var/run/mysqld/mysqld.sock
 
 ###
 ### Adminer Version
@@ -12,7 +12,17 @@ mysql=localhost:/var/run/mysqld/mysqld.sock
 # version=latest.php
 
 ### MySQL only, multi-language
-version=latest-mysql.php
+version = latest-mysql.php
 
 ### MySQL only, german
 # version=latest-mysql-de.php
+
+###
+### Adminer Theme
+### https://github.com/pematon/adminer-theme
+###
+### If not set, use default theme
+###
+#theme = default-orange
+#theme = default-blue
+#theme = default-green
