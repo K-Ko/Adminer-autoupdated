@@ -8,17 +8,23 @@ if (!file_exists($cfg))  die('Missing configuration file!');
 
 $config = parse_ini_file($cfg);
 
-function adminer_object() {
-    include_once 'plugins/plugin.php';
-    include_once 'plugins/json-column.php';
-    include_once 'plugins/single-server.php';
+function adminer_object()
+{
+    // Plugins auto-loader
+    foreach (glob("plugins/*.php") as $filename) {
+        include_once $filename;
+    }
 
     global $config;
 
-    return new AdminerPlugin(array(
-        new AdminerJsonColumn,
-        new AdminerLoginSingleServer($config['mysql'])
-    ));
+    $plugins = [
+        new AdminerLoginSingleServer($config['mysql']),
+        new AdminerJsonColumn
+    ];
+    if (isset($config['theme'])) {
+        $plugins[] = new AdminerTheme($config['theme']);
+    }
+    return new AdminerPlugin($plugins);
 }
 
 include 'adminer.php';
