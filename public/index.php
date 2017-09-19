@@ -22,8 +22,9 @@ $config = parse_ini_file($cfg);
 
 if (!file_exists('../adminer.php')) {
     // Load inital
-    exec('bin/update.sh');
-    die(header('Location: '.$_SERVER['REQUEST_URI']));
+    exec('../bin/update.sh');
+    die('<html><head><meta http-equiv="refresh" content="0"></head>' . 
+        '<body></body></html>');
 }
 
 /**
