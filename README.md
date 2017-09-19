@@ -6,6 +6,8 @@ Adminer installation with auto-update script
 
     git clone https://github.com/K-Ko/Adminer-autoupdated.git /var/www/html
 
+You can point your web server root directory also to `public`.
+
 ## Copy configuration template
 
     cp config/config.conf.dist config/config.conf
@@ -21,7 +23,7 @@ Adminer installation with auto-update script
 
 ## Or create a link to run daily
 
-    sudo ln -s /path/to/adminer-web/bin/update.sh /etc/cron.daily/update-adminer
+    sudo ln -s /path/to/adminer-web/bin/update.sh /etc/cron.daily/adminer-update
 
 ## Design
 

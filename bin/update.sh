@@ -9,8 +9,8 @@ cfg=$path/config/config.ini
 
 [ ! -s $cfg ] && echo 'Missing configuration file!' && exit 1
 
-### Get config
-. $cfg
+### Get config, transform from PHP ini to shell
+eval $(grep -v '^;' $cfg | sed 's/ *\(=\) */\1/g')
 
 ### Temp file for download
 new=$(mktemp)
