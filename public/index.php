@@ -41,7 +41,9 @@ function adminer_object()
 
     $plugins = array(
         new AdminerLoginSingleServer($config['mysql']),
-        new AdminerJsonColumn
+        new AdminerJsonColumn,
+//         new AdminerFloatThead,
+//         new AdminerTablesHistory
     );
 
     if (isset($config['theme'])) {

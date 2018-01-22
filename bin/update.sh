@@ -29,3 +29,15 @@ if [ -s $new ]; then
     ### Move the just downloaded file to its correct name
     mv $new $path/adminer.php
 fi
+
+### Update sub modules
+git submodule update
+
+### Update adminer-theme
+p=$path/contrib/adminer-theme/lib
+
+ln -sf $p/css    $path/public/css
+ln -sf $p/fonts  $path/public/fonts
+ln -sf $p/images $path/public/images
+
+ln -sf $p/plugins/AdminerTheme.php $path/plugins/AdminerTheme.php
