@@ -31,13 +31,13 @@ if [ -s $new ]; then
 fi
 
 ### Update sub modules
+git submodule init
 git submodule update
 
 ### Update adminer-theme
 p=$path/contrib/adminer-theme/lib
 
-ln -sf $p/css    $path/public/css
-ln -sf $p/fonts  $path/public/fonts
-ln -sf $p/images $path/public/images
-
-ln -sf $p/plugins/AdminerTheme.php $path/plugins/AdminerTheme.php
+[ -L $path/public/css ] || ln -sf $p/css    $path/public/css
+[ -L $path/public/fonts ] || ln -sf $p/fonts  $path/public/fonts
+[ -L $path/public/images ] || ln -sf $p/images $path/public/images
+[ -L $path/plugins/AdminerTheme.php ] || ln -sf $p/plugins/AdminerTheme.php $path/plugins/AdminerTheme.php

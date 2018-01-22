@@ -16,6 +16,10 @@ You can point your web server root directory also to `public`.
 
     $EDITOR config/config.conf
 
+## Run initial update for Adminer and submodules
+
+    bin/update.sh
+
 ## Add the auto-update script to the cron tab of your web server user, mostly `www-data`
 
     # Run every morning at 6 AM
