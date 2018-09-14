@@ -42,6 +42,7 @@ function adminer_object()
     $plugins = array(
         new AdminerLoginSingleServer($config['mysql']),
         new AdminerJsonColumn,
+        new AdminerStructComments,
 //         new AdminerFloatThead,
 //         new AdminerTablesHistory
     );
